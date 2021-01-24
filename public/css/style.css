@@ -1,0 +1,16 @@
+.card span {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	color: white;
+	padding-top: 50%;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.card:hover span {
+	visibility: visible;
+}

@@ -4,44 +4,40 @@
     <meta charset="utf-8">
     <title>Aplicação API Marvel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid home">
+
       <div class="row">
-        <div class="col-5">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Imagem</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>          
-        </div>
-        <div class="col-7">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Imagem</th>
-                <th>Descrição</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <header class="col-12">
+          <input type="search" name="search" class="text-center mx-auto d-block mt-3" placeholder="Buscar...">
+        </header>
       </div>
+
       <div class="row">
-        <div class="col-12">
+          <main class="d-flex flex-row mt-1 flex-wrap" id="list"></main>
+      </div>
+
+      <div class="row">
+        <div class="col-8 offset-2 mt-3">
           <nav>
             <ul class="pagination"></ul>
+              <!--<li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+								<a class="page-link" data-page="${i}" href="#">2</a>
+							  </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li> -->
           </nav>
         </div>
       </div>
+ 
     </div>
+    <div class="detail d-none">ok</div>  
     <script src="./bundle.js"></script>
 </body>
 </html>
